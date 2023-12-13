@@ -13,3 +13,21 @@ header, aside, article, footer{
     background-color: silver;
     font-size: 2em;
 }
+
+#introContainer {
+    display: flex;
+    flex-direction: row; /* side by side */
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: justify;
+}
+
+@media (max-width: 768px) {
+    #introContainer {
+        flex-direction: column; /* stacked */
+    }
+
+    #introContainer img {
+        margin-bottom: 20px; /* only add margin at smaller sizes */
+    }
+}
