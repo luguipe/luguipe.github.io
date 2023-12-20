@@ -22,6 +22,16 @@ header, aside, article, footer{
     text-align: justify;
 }
 
+#introContainer .introText {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+#introContainer img {
+    flex-shrink: 0; /* Prevent the image from shrinking */
+    margin-left: 10px;
+}
+
 @media (max-width: 768px) {
     #introContainer {
         flex-direction: column; /* stacked */
@@ -30,4 +40,33 @@ header, aside, article, footer{
     #introContainer img {
         margin-bottom: 20px; /* only add margin at smaller sizes */
     }
+}
+
+body {
+    background-color: #f8f9fa; /* Light grey background */
+    color: #333; /* Dark text for contrast */
+    font-family: 'Arial', sans-serif; /* Readable font */
+}
+
+/* Optionally, you can add a subtle gradient */
+body {
+    background: linear-gradient(to right, #f8f9fa, #e2e2e2);
+ 
+    
+}
+
+/* Ensure that text and other elements have sufficient contrast */
+h1, .navbar, .nav-link {
+    color: #212529; /* Darker shade for better readability */
+}
+
+/* Responsive images */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Add some padding and margin to make content more readable */
+.container {
+    padding: 20px;
 }
